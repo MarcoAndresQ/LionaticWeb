@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Lionatic - Accesorios y Celulares</title>
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Iconos (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts (Ejemplo: Montserrat) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ==================== ENCABEZADO ==================== -->
+    <header class="header">
+        <div class="container header-container">
+            <!-- Aquí colocar el logo de la tienda -->
+            <a href="/" class="logo">LioNATIC</a>
+
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <!-- Estos enlaces se reemplazarán con la navegación de Shopify -->
+                    <li><a href="#categories">Categorías</a></li>
+                    <li><a href="#featured-products">Destacados</a></li>
+                    <li><a href="#">Celulares</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-icons">
+                <button id="search-btn" class="icon-btn" aria-label="Buscar"><i class="fas fa-search"></i></button>
+                <!-- El enlace de cuenta se gestionará con Shopify -->
+                <a href="/account" class="icon-btn" aria-label="Mi Cuenta"><i class="fas fa-user"></i></a>
+                <!-- El enlace del carrito se gestionará con Shopify -->
+                <a href="/cart" class="icon-btn" aria-label="Carrito de Compras">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span> <!-- Este contador se actualizará con Shopify/JS -->
+                </a>
+                <button id="menu-toggle" class="icon-btn mobile-menu-toggle" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+   <!-- ==================== BANNER PRINCIPAL ==================== -->
+
+<section class="banner">
+    <!-- Aquí colocar imagen de fondo del banner principal -->
+    <div class="banner-background" style="background-image: url('lionaticfondo.png');"> <!-- CAMBIA AQUÍ EL NOMBRE DEL ARCHIVO SI ES DIFERENTE -->
+    </div>
+    <div class="container banner-content">
+        <!-- Aquí texto del banner -->
+        <h1>Tecnología de Vanguardia</h1>
+        <p>Descubre los últimos accesorios y celulares.</p>
+        <a href="#featured-products" class="btn btn-primary">Ver Productos</a>
+    </div>
+</section>
+
+    <!-- ==================== SECCIÓN DE CATEGORÍAS ==================== -->
+    <section id="categories" class="categories-section section-padding">
+        <div class="container">
+            <h2 class="section-title">Nuestras Categorías</h2>
+            <div class="category-grid">
+                <!-- Ejemplo de categoría 1 -->
+                <a href="/collections/accesorios" class="category-item">
+                    <!-- Aquí colocar imagen de la categoría -->
+                    <img src="accesorios.jpg" alt="Accesorios para Celulares">
+                    <h3>Accesorios</h3>
+                </a>
+                <!-- Ejemplo de categoría 2 -->
+                <a href="/collections/celulares" class="category-item">
+                    <!-- Aquí colocar imagen de la categoría -->
+                    <img src="Celulares.jpg" alt="Celulares">
+                    <h3>Celulares</h3>
+                </a>
+                <!-- Ejemplo de categoría 3 -->
+                <a href="/collections/ofertas" class="category-item">
+                    <!-- Aquí colocar imagen de la categoría -->
+                    <img src="ofertas.jpg" alt="Ofertas Especiales">
+                    <h3>Ofertas Especiales</h3>
+                </a>
+                 <!-- Ejemplo de categoría 4 (opcional) -->
+                <a href="/collections/audio" class="category-item">
+                    <!-- Aquí colocar imagen de la categoría -->
+                    <img src="audio.jpg" alt="Audio">
+                    <h3>Audio</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECCIÓN DE PRODUCTOS DESTACADOS ==================== -->
+    <section id="featured-products" class="featured-products-section section-padding">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="product-grid">
+                <!-- Producto Ejemplo 1 -->
+                <div class="product-card">
+                    <!-- Aquí colocar imagen del producto -->
+                    <a href="/products/producto-ejemplo-1">
+                        <img src="cargador-destacado.jpg" alt="Nombre del Producto 1">
+                    </a>
+                    <!-- Aquí nombre del producto -->
+                    <h3><a href="/products/producto-ejemplo-1">Cargador Inalámbrico Pro</a></h3>
+                    <!-- Aquí precio del producto -->
+                    <p class="price">$29.99</p>
+                    <!-- Este botón llevará a la página del producto o añadirá al carrito en Shopify -->
+                    <button class="btn btn-secondary add-to-cart-btn" data-product-id="12345">Comprar</button>
+                </div>
+
+                <!-- Producto Ejemplo 2 -->
+                <div class="product-card">
+                    <!-- Aquí colocar imagen del producto -->
+                     <a href="/products/producto-ejemplo-2">
+                        <img src="audifonospro.jpg" alt="Nombre del Producto 2">
+                    </a>
+                    <!-- Aquí nombre del producto -->
+                    <h3><a href="/products/producto-ejemplo-2">Auriculares ProSound X</a></h3>
+                    <!-- Aquí precio del producto -->
+                    <p class="price">$79.99</p>
+                    <button class="btn btn-secondary add-to-cart-btn" data-product-id="67890">Comprar</button>
+                </div>
+
+                <!-- Producto Ejemplo 3 -->
+                <div class="product-card">
+                    <!-- Aquí colocar imagen del producto -->
+                    <a href="/products/producto-ejemplo-3">
+                        <img src="funda.jpg" alt="Nombre del Producto 3">
+                    </a>
+                    <!-- Aquí nombre del producto -->
+                    <h3><a href="/products/producto-ejemplo-3">Funda Ultra Slim</a></h3>
+                    <!-- Aquí precio del producto -->
+                    <p class="price">$15.50</p>
+                    <button class="btn btn-secondary add-to-cart-btn" data-product-id="11223">Comprar</button>
+                </div>
+
+                <!-- Producto Ejemplo 4 -->
+                <div class="product-card">
+                    <!-- Aquí colocar imagen del producto -->
+                    <a href="/products/producto-ejemplo-4">
+                        <img src="galaxy.jpg" alt="Nombre del Producto 4">
+                    </a>
+                    <!-- Aquí nombre del producto -->
+                    <h3><a href="/products/producto-ejemplo-4">Teléfono Galaxy Z</a></h3>
+                    <!-- Aquí precio del producto -->
+                    <p class="price">$999.00</p>
+                    <button class="btn btn-secondary add-to-cart-btn" data-product-id="44556">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECCIÓN DE TESTIMONIOS ==================== -->
+    <section class="testimonials-section section-padding">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            <div class="testimonial-grid">
+                <!-- Testimonio Ejemplo 1 -->
+                <div class="testimonial-card">
+                    <!-- Aquí texto del testimonio -->
+                    <p>"¡Excelente calidad y envío rapidísimo! Los accesorios son tal cual se describen. Muy recomendado."</p>
+                    <!-- Aquí nombre del cliente -->
+                    <h4>- Ana P.</h4>
+                </div>
+                <!-- Testimonio Ejemplo 2 -->
+                <div class="testimonial-card">
+                    <!-- Aquí texto del testimonio -->
+                    <p>"El diseño de la tienda es muy profesional y fácil de usar. Encontré lo que buscaba en segundos."</p>
+                    <!-- Aquí nombre del cliente -->
+                    <h4>- Carlos G.</h4>
+                </div>
+                <!-- Testimonio Ejemplo 3 -->
+                <div class="testimonial-card">
+                    <!-- Aquí texto del testimonio -->
+                    <p>"Compré mi nuevo celular aquí y estoy encantado. El servicio al cliente fue muy atento."</p>
+                    <!-- Aquí nombre del cliente -->
+                    <h4>- Sofía L.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PIE DE PÁGINA ==================== -->
+    <footer id="contact" class="footer">
+        <div class="container footer-container">
+            <div class="footer-column">
+                <h4>LioNATIC</h4>
+                <!-- Aquí información de la empresa -->
+                <p>Tu tienda de confianza para accesorios y tecnología móvil de última generación.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <!-- Estos enlaces se gestionarán con Shopify -->
+                    <li><a href="/pages/sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="/policies/shipping-policy">Política de Envíos</a></li>
+                    <li><a href="/policies/refund-policy">Política de Devoluciones</a></li>
+                    <li><a href="/policies/privacy-policy">Política de Privacidad</a></li>
+                    <li><a href="/policies/terms-of-service">Términos de Servicio</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contacto</h4>
+                <!-- Aquí información de contacto -->
+                <p><i class="fas fa-envelope"></i> <a href="mailto:contacto@lionatic.com">contacto@lionatic.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                <div class="social-icons">
+                    <!-- Aquí enlaces a redes sociales -->
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+             <div class="footer-column">
+                <h4>Suscríbete</h4>
+                <p>Recibe ofertas y novedades directamente en tu correo.</p>
+                <!-- Este formulario se integrará con el sistema de marketing de Shopify -->
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-primary">Suscribir</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <!-- Aquí el copyright -->
+            <p>© 2024 LioNATIC. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scrip.js"></script>
+</body>
+</html>
